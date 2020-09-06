@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Offer.css";
 import OfferResult from "../offerResult.js/OfferResult";
 import RadioLanguage from "../radioLanguage/RadioLanguage";
+import InputFile from "../inputFile/InputFile";
 
 function Offer() {
   const [radio, setRadio] = React.useState(false);
@@ -10,7 +11,6 @@ function Offer() {
   const [strLength, setStrLength] = React.useState(0);
   const [timeResult, setTimeResult] = React.useState('');
   const [priceResult, setPriceResult] = React.useState('0,00');
-  const fileHtml = file ? <div className='area__info info'><p className='info__name'>{file.name}</p><p className='info__length'>Количество символов: </p><p onClick={()=>setFile('')} className='info__back'>завантажте файл</p></div> : null
 
   const detail = {
     language: {
@@ -155,6 +155,10 @@ function Offer() {
     e.persist()
   }
 
+  function addFile(){
+    setFile('')
+  }
+
   return (
     <main className="main">
       <div className="main__wrap wrap">
@@ -189,7 +193,7 @@ function Offer() {
                 className="area__textarea"
                 placeholder="Уведіть текст або"
               ></textarea>
-              {fileHtml}
+              <InputFile file={file} addFile={addFile}></InputFile>
               </div>
               <p className='section__str-length'>{strLength}</p>
             </section>

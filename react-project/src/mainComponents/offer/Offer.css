@@ -86,39 +86,3 @@
 .area__file {
     display: none;
 }
-
-.area__info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    background-color: #eaeaea;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.info__name {
-    font-weight: 700;
-    font-size: 20px;
-    margin: 0;
-}
-
-.info__length {
-    font-size: 15px;
-    margin: 0;
-
-}
-
-.info__back {
-    font-size: 13px;
-    border-bottom: 1px dashed #999;
-    color: #999;
-    cursor: pointer;
-    margin-top: 5px;
-    margin: 0;
-
-}
