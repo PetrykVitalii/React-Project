@@ -1,0 +1,7 @@
+.choose-language__radio {
+    margin: 12px 0;
+}
+
+.choose-language__radio + span {
+    margin-left: 7px;
+}

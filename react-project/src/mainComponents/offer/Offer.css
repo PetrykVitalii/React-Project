@@ -46,14 +46,6 @@
     flex-direction: column;
 }
 
-.section__lang {
-    margin: 12px 0;
-}
-
-.section__lang+span {
-    margin-left: 7px;
-}
-
 .area__textarea {
     width: 90%;
     resize: none;

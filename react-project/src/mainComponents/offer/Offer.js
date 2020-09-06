@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Offer.css";
 import OfferResult from "../offerResult.js/OfferResult";
+import RadioLanguage from "../radioLanguage/RadioLanguage";
 
 function Offer() {
   const [radio, setRadio] = React.useState(false);
@@ -194,36 +195,7 @@ function Offer() {
             </section>
             <section className="section">
               <h4 className="section__title">Мова</h4>
-              <label>
-                <input
-                  value="ukr"
-                  onChange={checkLang}
-                  name="lang"
-                  className="section__lang"
-                  type="radio"
-                ></input>
-                <span>Українська</span>
-              </label>
-              <label>
-                <input
-                  value="rus"
-                  onChange={checkLang}
-                  name="lang"
-                  className="section__lang"
-                  type="radio"
-                ></input>
-                <span>Російська</span>
-              </label>
-              <label>
-                <input
-                  value="eng"
-                  onChange={checkLang}
-                  name="lang"
-                  className="section__lang"
-                  type="radio"
-                ></input>
-                <span>Англійська</span>
-              </label>
+              <RadioLanguage checkLang={checkLang}></RadioLanguage>
               <input
                 type="text"
                 className="section__input"
