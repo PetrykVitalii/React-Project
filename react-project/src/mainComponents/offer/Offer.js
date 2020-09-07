@@ -195,7 +195,7 @@ function Offer() {
               ></textarea>
               <InputFile file={file} addFile={addFile}></InputFile>
               </div>
-              <p className='section__str-length'>{strLength}</p>
+              {strLength ? <p className='section__str-length'>{strLength}</p> : null}
             </section>
             <section className="section">
               <h4 className="section__title">Мова</h4>
