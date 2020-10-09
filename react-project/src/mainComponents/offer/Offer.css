@@ -86,3 +86,7 @@
 .area__file {
     display: none;
 }
+
+.visible{
+    visibility: hidden;
+}
